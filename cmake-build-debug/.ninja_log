@@ -1,0 +1,5 @@
+# ninja log v5
+4	336	7170078176827132	Sandbox/CMakeFiles/Sandbox.dir/Source/main.cpp.obj	a5e24b833597bdc1
+3	246	7170078614193813	DaemonEngine/CMakeFiles/DaemonEngine.dir/Source/Core.cpp.obj	5af74cdd3e989e78
+247	304	7170078614773939	D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.a	67eefcf3b601762b
+304	389	7170078615584127	D:/development/cpp/DaemonEngine/bin/Debug-AMD64/Sandbox/Sandbox.exe	699ef5658b9d4948
