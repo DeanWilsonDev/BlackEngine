@@ -69,7 +69,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target DaemonEngine
+# Object build statements for SHARED_LIBRARY target DaemonEngine
 
 
 #############################################
@@ -78,7 +78,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 build cmake_object_order_depends_target_DaemonEngine: phony || DaemonEngine/CMakeFiles/DaemonEngine.dir
 
 build DaemonEngine/CMakeFiles/DaemonEngine.dir/Source/Core.cpp.obj: CXX_COMPILER__DaemonEngine_unscanned_Debug D$:/development/cpp/DaemonEngine/DaemonEngine/Source/Core.cpp || cmake_object_order_depends_target_DaemonEngine
-  DEFINES = -DBUILDING_DAEMON_ENGINE
+  DEFINES = -DBUILDING_DAEMONENGINE -DDaemonEngine_EXPORTS
   DEP_FILE = DaemonEngine\CMakeFiles\DaemonEngine.dir\Source\Core.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = DaemonEngine\CMakeFiles\DaemonEngine.dir
@@ -86,19 +86,22 @@ build DaemonEngine/CMakeFiles/DaemonEngine.dir/Source/Core.cpp.obj: CXX_COMPILER
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target DaemonEngine
+# Link build statements for SHARED_LIBRARY target DaemonEngine
 
 
 #############################################
-# Link the static library D:\development\cpp\DaemonEngine\bin\Debug-AMD64\DaemonEngine\libDaemonEngine.a
+# Link the shared library D:\development\cpp\DaemonEngine\bin\Debug-AMD64\DaemonEngine\libDaemonEngine.dll
 
-build D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.a: CXX_STATIC_LIBRARY_LINKER__DaemonEngine_Debug DaemonEngine/CMakeFiles/DaemonEngine.dir/Source/Core.cpp.obj
+build D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll.a: CXX_SHARED_LIBRARY_LINKER__DaemonEngine_Debug DaemonEngine/CMakeFiles/DaemonEngine.dir/Source/Core.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = DaemonEngine\CMakeFiles\DaemonEngine.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = D:\development\cpp\DaemonEngine\bin\Debug-AMD64\DaemonEngine\libDaemonEngine.a
-  TARGET_PDB = DaemonEngine.a.dbg
+  RESTAT = 1
+  TARGET_FILE = D:\development\cpp\DaemonEngine\bin\Debug-AMD64\DaemonEngine\libDaemonEngine.dll
+  TARGET_IMPLIB = D:\development\cpp\DaemonEngine\bin\Debug-AMD64\DaemonEngine\libDaemonEngine.dll.a
+  TARGET_PDB = DaemonEngine.dll.dbg
 
 
 #############################################
@@ -152,9 +155,9 @@ build Sandbox/CMakeFiles/Sandbox.dir/Source/main.cpp.obj: CXX_COMPILER__Sandbox_
 #############################################
 # Link the executable D:\development\cpp\DaemonEngine\bin\Debug-AMD64\Sandbox\Sandbox.exe
 
-build D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/Sandbox/Sandbox.exe: CXX_EXECUTABLE_LINKER__Sandbox_Debug Sandbox/CMakeFiles/Sandbox.dir/Source/main.cpp.obj | D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.a || D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.a
+build D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/Sandbox/Sandbox.exe: CXX_EXECUTABLE_LINKER__Sandbox_Debug Sandbox/CMakeFiles/Sandbox.dir/Source/main.cpp.obj | D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll.a || D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll
   FLAGS = -g
-  LINK_LIBRARIES = D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Sandbox\CMakeFiles\Sandbox.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -188,13 +191,13 @@ build Sandbox/rebuild_cache: phony Sandbox/CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build DaemonEngine: phony D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.a
+build DaemonEngine: phony D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll
 
 build Sandbox: phony D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/Sandbox/Sandbox.exe
 
 build Sandbox.exe: phony D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/Sandbox/Sandbox.exe
 
-build libDaemonEngine.a: phony D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.a
+build libDaemonEngine.dll: phony D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll
 
 # =============================================================================
 # Folder targets.
@@ -211,7 +214,7 @@ build all: phony DaemonEngine/all Sandbox/all
 #############################################
 # Folder: D:/development/cpp/DaemonEngine/cmake-build-debug/DaemonEngine
 
-build DaemonEngine/all: phony D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.a
+build DaemonEngine/all: phony D$:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll
 
 # =============================================================================
 

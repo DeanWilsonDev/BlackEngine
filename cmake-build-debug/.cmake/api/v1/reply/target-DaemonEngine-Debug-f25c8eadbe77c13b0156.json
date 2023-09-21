@@ -1,9 +1,14 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.a"
+			"path" : "D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll"
+		},
+		{
+			"path" : "D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll.a"
+		},
+		{
+			"path" : "D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -50,7 +55,10 @@
 			[
 				{
 					"backtrace" : 2,
-					"define" : "BUILDING_DAEMON_ENGINE"
+					"define" : "BUILDING_DAEMONENGINE"
+				},
+				{
+					"define" : "DaemonEngine_EXPORTS"
 				}
 			],
 			"language" : "CXX",
@@ -69,8 +77,23 @@
 		}
 	],
 	"id" : "DaemonEngine::@1ffde14ddd7cec5b12e7",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
 	"name" : "DaemonEngine",
-	"nameOnDisk" : "libDaemonEngine.a",
+	"nameOnDisk" : "libDaemonEngine.dll",
 	"paths" : 
 	{
 		"build" : "DaemonEngine",
@@ -119,5 +142,5 @@
 			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "SHARED_LIBRARY"
 }

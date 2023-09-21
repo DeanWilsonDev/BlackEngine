@@ -99,7 +99,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "D:\\development\\cpp\\DaemonEngine\\bin\\Debug-AMD64\\DaemonEngine\\libDaemonEngine.a",
+				"fragment" : "D:\\development\\cpp\\DaemonEngine\\bin\\Debug-AMD64\\DaemonEngine\\libDaemonEngine.dll.a",
 				"role" : "libraries"
 			},
 			{

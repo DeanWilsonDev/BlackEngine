@@ -30,8 +30,8 @@ namespace DaemonEngine {
 
   protected:
     std::wstring m_appName;
-    int m_screenWidth;
-    int m_screenHeight;
+    int m_screenWidth{};
+    int m_screenHeight{};
 
   private:
     float m_blendFactor = 1.0f;
