@@ -10,14 +10,21 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY  ${CMAKE_SOURCE_DIR}/bin/${CMAKE_SYSTEM_PROCE
 # Generate .dll file
 add_library(
         DaemonEngine SHARED
-        Source/Core.cpp
-        Source/Math.h
-        Source/Core.h
-        Source/Mesh.h
+        Source/DaemonEngine/Core.cpp
+        Source/DaemonEngine/Math.h
+        Source/DaemonEngine/Core.h
+        Source/DaemonEngine/Mesh.h
         Source/Test.cpp
         Source/Test.h
+        Source/DaemonEngine/Application.cpp
+        Source/DaemonEngine/Application.h
+        Source/DaemonEngine.h
+        Source/DaemonEngine/EntryPoint.h
 )
 
-
+add_definitions(
+        -DDE_PLATFORM_WINDOWS
+        -DDE_BUILD_DLL
+)
 
 target_compile_definitions(DaemonEngine PRIVATE BUILDING_DAEMON_ENGINE)

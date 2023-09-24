@@ -6,7 +6,12 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${CMAKE_SYSTEM_PROCESSOR}/${PROJECT_NAME}/)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY  ${CMAKE_SOURCE_DIR}/bin/${CMAKE_SYSTEM_PROCESSOR}/${PROJECT_NAME}/)
 
-add_executable(Sandbox Source/main.cpp)
+add_executable(Sandbox
+        Source/Sandbox.cpp
+        Source/Sandbox.h)
+add_definitions(-DDE_PLATFORM_WINDOWS -DDE_BUILD_DLL)
+include_directories(${CMAKE_SOURCE_DIR}/DaemonEngine/Source)
+
 target_link_libraries(Sandbox DaemonEngine)
 
 target_compile_definitions(Sandbox PRIVATE BUILDING_SANDBOX)
