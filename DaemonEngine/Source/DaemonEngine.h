@@ -7,7 +7,7 @@
 // For use by Daemon Engine Games
 
 #include "DaemonEngine/Application.h"
-#include "Test.h"
+#include "DaemonEngine/Log.h"
 
 // --------------Entry Point-------------------
 #include "DaemonEngine/EntryPoint.h"

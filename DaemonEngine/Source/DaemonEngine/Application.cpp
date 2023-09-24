@@ -6,12 +6,11 @@
 
 namespace DaemonEngine {
 
-
-  Application::~Application() {
+  Application::Application() {
 
   };
 
-  Application::Application() {
+  Application::~Application() {
 
   };
 

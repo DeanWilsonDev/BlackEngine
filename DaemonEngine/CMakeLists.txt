@@ -14,17 +14,23 @@ add_library(
         Source/DaemonEngine/Math.h
         Source/DaemonEngine/Core.h
         Source/DaemonEngine/Mesh.h
-        Source/Test.cpp
-        Source/Test.h
-        Source/DaemonEngine/Application.cpp
         Source/DaemonEngine/Application.h
+        Source/DaemonEngine/Application.cpp
+        Source/DaemonEngine/Log.h
+        Source/DaemonEngine/Log.cpp
         Source/DaemonEngine.h
         Source/DaemonEngine/EntryPoint.h
 )
 
+
+
 add_definitions(
         -DDE_PLATFORM_WINDOWS
         -DDE_BUILD_DLL
+)
+
+include_directories(
+        ${CMAKE_SOURCE_DIR}/DaemonEngine/Packages/spdlog/include
 )
 
 target_compile_definitions(DaemonEngine PRIVATE BUILDING_DAEMON_ENGINE)
