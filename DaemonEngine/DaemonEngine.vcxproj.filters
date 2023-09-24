@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DaemonEngine">
+      <UniqueIdentifier>{EFCA953F-DB2D-25E4-84B3-5D9A70F5F066}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\DaemonEngine.h" />
+    <ClInclude Include="Source\DaemonEngine\Application.h">
+      <Filter>DaemonEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DaemonEngine\Core.h">
+      <Filter>DaemonEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DaemonEngine\EntryPoint.h">
+      <Filter>DaemonEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DaemonEngine\Log.h">
+      <Filter>DaemonEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DaemonEngine\Math.h">
+      <Filter>DaemonEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DaemonEngine\Mesh.h">
+      <Filter>DaemonEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\DaemonEngine\Application.cpp">
+      <Filter>DaemonEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DaemonEngine\Core.cpp">
+      <Filter>DaemonEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DaemonEngine\Log.cpp">
+      <Filter>DaemonEngine</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -11,15 +11,13 @@ extern DaemonEngine::Application* DaemonEngine::CreateApplication();
 int main(int argc, char** argv) {
 
   DaemonEngine::Log::Init();
-
-  DaemonEngine::Log::GetCoreLogger()->warn("Initialized Log");
-  DaemonEngine::Log::GetClientLogger()->info("Hello!");
+  DE_CORE_WARN("Initialized Log");
+  int a = 5;
+  DE_INFO("Welcome to the Sandbox! Var={0}", a);
 
   auto app = DaemonEngine::CreateApplication();
   app->Run();
   delete app;
-
-  return 0;
 }
 
 #endif
