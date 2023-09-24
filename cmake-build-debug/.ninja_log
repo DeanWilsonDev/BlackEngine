@@ -1,11 +1,12 @@
 # ninja log v5
 4	336	7170078176827132	Sandbox/CMakeFiles/Sandbox.dir/Source/main.cpp.obj	a5e24b833597bdc1
-2	250	7170085853562909	DaemonEngine/CMakeFiles/DaemonEngine.dir/Source/Core.cpp.obj	64b3c5abe5aef8e3
+262	346	7172303466574170	D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll.a	aba7395744fc5ce7
+2	252	7172304026312521	DaemonEngine/CMakeFiles/DaemonEngine.dir/Source/Core.cpp.obj	5af74cdd3e989e78
 304	389	7170078615584127	D:/development/cpp/DaemonEngine/bin/Debug-AMD64/Sandbox/Sandbox.exe	699ef5658b9d4948
-252	307	7170082919312309	D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.a	67eefcf3b601762b
-0	108	7170086875493031	build.ninja	921729f4ef476524
-5	360	7170086896747829	DaemonEngine/CMakeFiles/DaemonEngine.dir/Source/Core.cpp.obj	64b3c5abe5aef8e3
-3	260	7170087038539804	DaemonEngine/CMakeFiles/DaemonEngine.dir/Source/Core.cpp.obj	64b3c5abe5aef8e3
-2	242	7170087264350729	DaemonEngine/CMakeFiles/DaemonEngine.dir/Source/Core.cpp.obj	64b3c5abe5aef8e3
-243	322	7170087265120901	D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll	ff8c11d728c36ee6
-243	322	7170087265120901	D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.dll.a	ff8c11d728c36ee6
+252	321	7172304027012684	D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine.a	96252c1188ee7d6
+1	105	7172307050165439	build.ninja	921729f4ef476524
+5	68	7172304024472115	DaemonEngine/CMakeFiles/DaemonEngine.dir/Source/Test.cpp.obj	5101f428e03a499d
+5	75	7172307315529024	DaemonEngine/CMakeFiles/DaemonEngine_shared.dir/Source/Test.cpp.obj	f63e7f4e42e8a513
+0	265	7172307317429453	DaemonEngine/CMakeFiles/DaemonEngine_shared.dir/Source/Core.cpp.obj	85b5bfc15c45de56
+265	350	7172307318259636	D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine_shared.dll	64192ac104cfe3c6
+265	350	7172307318259636	D:/development/cpp/DaemonEngine/bin/Debug-AMD64/DaemonEngine/libDaemonEngine_shared.dll.a	64192ac104cfe3c6

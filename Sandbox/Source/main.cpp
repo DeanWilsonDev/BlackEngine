@@ -2,8 +2,13 @@
 
 using namespace std;
 
+namespace DaemonEngine {
+  __declspec(dllimport) void Print();
+}
+
+
 int main() {
 
-    cout << "Hello World" << endl;
+    DaemonEngine::Print();
     return 0;
 }
