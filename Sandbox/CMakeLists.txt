@@ -24,15 +24,13 @@ add_definitions(
         -DDE_BUILD_DLL
 )
 
-
 target_link_libraries(Sandbox DaemonEngine)
 
 target_compile_definitions(Sandbox PRIVATE BUILDING_SANDBOX)
 
-
 add_custom_command(TARGET Sandbox POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${CMAKE_SOURCE_DIR}/DaemonEngine/bin/${CMAKE_SYSTEM_PROCESSOR}/DaemonEngine/DaemonEngine.dll"
+        "${CMAKE_SOURCE_DIR}/bin/${CMAKE_SYSTEM_PROCESSOR}/DaemonEngine/Debug/DaemonEngine.dll"
         $<TARGET_FILE_DIR:Sandbox>
     COMMENT "Copying DaemonEngine.dll to output directory"
 )
