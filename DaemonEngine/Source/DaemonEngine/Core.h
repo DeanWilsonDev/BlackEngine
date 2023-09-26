@@ -10,8 +10,10 @@
   #else
     #define DAEMON_ENGINE_API __declspec(dllimport)
   #endif
+#elif DE_PLATFORM_MACOS
+  #define DAEMON_ENGINE_API __attribute__((visibility("default")))
 #else
-  #error Daemon Engine only supports windows
+  #error Daemon Engine only supports Windows and MacOS
 #endif
 
 namespace DaemonEngine {
