@@ -20,6 +20,8 @@ add_library(
   Source/DaemonEngine/Application.cpp
   Source/DaemonEngine.h
   Source/DaemonEngine/EntryPoint.h
+  Source/DaemonEngine/Logging/Logger.cpp
+  Source/DaemonEngine/Logging/Logger.h
 )
 
 target_include_directories(DaemonEngine PUBLIC "${CMAKE_SOURCE_DIR}/DaemonEngine/Packages/spdlog/include")
