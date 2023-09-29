@@ -3,19 +3,31 @@
 //
 #include "Logger.h"
 
+#include <utility>
+#include "Logger.test.h"
+
 namespace DaemonEngine::Logging {
-    void Logger::Log(LogLevel level, std::string_view message) {
-      bool is_log_enabled = ShouldLogMessage(level);
-      // Add tracing
-      if(!is_log_enabled){
-        return;
-      }
-      
+
+  Logger::Logger(std::string name, bool debugEnabled) {
+    sName = std::move(name);
+    bDebugEnabled = debugEnabled;
+  }
+
+  void Logger::Log(std::chrono::system_clock::time_point logTime, LogLevel level, std::string_view message) {
+    bool logEnabled = ShouldLogMessage(level);
+    // Add tracing
+    if (!logEnabled) {
+      return;
     }
+
+    LogMessage(logTime, sName, level, message);
+
+
+  }
 
 
   bool Logger::ShouldLogMessage(LogLevel level) const {
-    if(bDebugEnabled){
+    if (bDebugEnabled) {
       return true;
     }
     return level >= LogLevel::Info;
@@ -33,5 +45,6 @@ namespace DaemonEngine::Logging {
   bool Logger::GetDebugEnabled() const {
     return bDebugEnabled;
   }
+
 
 }

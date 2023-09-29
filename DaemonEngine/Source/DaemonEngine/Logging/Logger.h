@@ -5,6 +5,7 @@
 #pragma once
 
 #include <string>
+#include <chrono>
 
 
 
@@ -32,14 +33,19 @@ const int DAEMON_LOG_LEVEL_OFF = 6;
     class Logger {
 
     public:
-
-      void Log(LogLevel level, std::string_view message);
+      Logger(std::string name, bool debugEnabled);
+      ~Logger();
+      void Log(std::chrono::system_clock::time_point logTime, LogLevel level, std::string_view message);
       bool ShouldLogMessage(LogLevel level) const;
+      void LogMessage(std::chrono::system_clock::time_point  logTime, std::string name, LogLevel level, std::string_view message);
       bool GetDebugEnabled() const;
       bool EnableDebugging();
       bool DisableDebugging();
     private:
+      std::string sName;
+      std::chrono::system_clock dtSystemClock;
       bool bDebugEnabled;
+
     };
 
 
