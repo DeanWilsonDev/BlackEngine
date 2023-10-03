@@ -4,7 +4,6 @@
 #include "Logger.h"
 
 #include <utility>
-#include "Logger.test.h"
 
 namespace DaemonEngine::Logging {
 
@@ -13,18 +12,17 @@ namespace DaemonEngine::Logging {
     bDebugEnabled = debugEnabled;
   }
 
+  Logger::~Logger() = default;
+
   void Logger::Log(std::chrono::system_clock::time_point logTime, LogLevel level, std::string_view message) {
     bool logEnabled = ShouldLogMessage(level);
-    // Add tracing
+    // TODO Add tracing?
     if (!logEnabled) {
       return;
     }
 
     LogMessage(logTime, sName, level, message);
-
-
   }
-
 
   bool Logger::ShouldLogMessage(LogLevel level) const {
     if (bDebugEnabled) {
@@ -32,7 +30,6 @@ namespace DaemonEngine::Logging {
     }
     return level >= LogLevel::Info;
   }
-
 
   bool Logger::EnableDebugging() {
     return bDebugEnabled = true;
@@ -44,6 +41,11 @@ namespace DaemonEngine::Logging {
 
   bool Logger::GetDebugEnabled() const {
     return bDebugEnabled;
+  }
+
+  void Logger::LogMessage(std::chrono::system_clock::time_point logTime, std::string name, LogLevel level,
+                          std::string_view message) {
+
   }
 
 

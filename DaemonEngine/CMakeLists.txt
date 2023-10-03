@@ -22,14 +22,6 @@ add_library(
   Source/DaemonEngine/EntryPoint.h
   Source/DaemonEngine/Logging/Logger.cpp
   Source/DaemonEngine/Logging/Logger.h
-  Packages/DocTest/doctest.h
-  Source/DaemonEngine/Logging/Logger.test.h
-)
-
-target_include_directories(
-  DaemonEngine PUBLIC
-  "${CMAKE_SOURCE_DIR}/DaemonEngine/Packages/spdlog/include"
-  "${CMAKE_SOURCE_DIR}/DaemonEngine/Packages/DocTest"
 )
 
 add_definitions(
@@ -38,5 +30,10 @@ add_definitions(
   -DDE_BUILD_DLL
 )
 
+
+target_include_directories(
+  DaemonEngine PUBLIC
+  "${CMAKE_SOURCE_DIR}/DaemonEngine/Packages/spdlog/include"
+)
 
 target_compile_definitions(DaemonEngine PUBLIC BUILDING_DAEMON_ENGINE)
