@@ -5,7 +5,7 @@
 
 #include "Core.h"
 
-namespace DaemonEngine {
+namespace BlackEngine {
 
   class DAEMON_ENGINE_API Application {
   public:
@@ -19,4 +19,4 @@ namespace DaemonEngine {
   // To be defined in the Client
   Application* CreateApplication();
 
-} // DaemonEngine
+} // BlackEngine

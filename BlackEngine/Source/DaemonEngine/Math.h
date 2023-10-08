@@ -8,7 +8,7 @@
 #include <vector>
 #include <cstdint>
 
-namespace DaemonEngine::Math {
+namespace BlackEngine::Math {
 
   template<class T = double>
   struct Vector2D {

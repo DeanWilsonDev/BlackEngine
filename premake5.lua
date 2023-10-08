@@ -1,4 +1,4 @@
-workspace "DaemonEngine"
+workspace "BlackEngine"
     architecture "x64"
 
     configurations{
@@ -9,8 +9,8 @@ workspace "DaemonEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
-project "DaemonEngine"
-    location "DaemonEngine"
+project "BlackEngine"
+    location "BlackEngine"
     kind "SharedLib"
 
     language "C++"
@@ -67,12 +67,12 @@ project "Sandbox"
   }
 
   includedirs {
-    "DaemonEngine/Packages/spdlog/include",
-    "DaemonEngine/Source"
+    "BlackEngine/Packages/spdlog/include",
+    "BlackEngine/Source"
   }
 
   links {
-    "DaemonEngine"
+    "BlackEngine"
   }
 
   filter "system:windows"

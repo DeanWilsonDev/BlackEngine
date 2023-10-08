@@ -7,10 +7,10 @@
 #include <vector>
 #include "Math.h"
 
-using namespace DaemonEngine::Math;
+using namespace BlackEngine::Math;
 using namespace std;
 
-namespace DaemonEngine::Mesh {
+namespace BlackEngine::Mesh {
 
   struct Triangle {
     Vector3D<float> vertices[3];

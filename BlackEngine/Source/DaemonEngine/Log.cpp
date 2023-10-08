@@ -5,7 +5,7 @@
 #include "Log.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 
-namespace DaemonEngine {
+namespace BlackEngine {
 
   std::shared_ptr<spdlog::logger> Log::s_CoreLogger;
   std::shared_ptr<spdlog::logger> Log::s_ClientLogger;
@@ -30,4 +30,4 @@ namespace DaemonEngine {
   }
 
 
-} // DaemonEngine
+} // BlackEngine

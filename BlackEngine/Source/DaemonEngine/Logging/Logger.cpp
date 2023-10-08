@@ -5,7 +5,7 @@
 
 #include <utility>
 
-namespace DaemonEngine::Logging {
+namespace BlackEngine::Logging {
 
   Logger::Logger(std::string name, bool debugEnabled) {
     sName = std::move(name);

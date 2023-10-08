@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="BlackEngine">
+      <UniqueIdentifier>{EFCA953F-DB2D-25E4-84B3-5D9A70F5F066}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\BlackEngine.h" />
+    <ClInclude Include="Source\BlackEngine\Application.h">
+      <Filter>BlackEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BlackEngine\Core.h">
+      <Filter>BlackEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BlackEngine\EntryPoint.h">
+      <Filter>BlackEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BlackEngine\Log.h">
+      <Filter>BlackEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BlackEngine\Math.h">
+      <Filter>BlackEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BlackEngine\Mesh.h">
+      <Filter>BlackEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\BlackEngine\Application.cpp">
+      <Filter>BlackEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BlackEngine\Core.cpp">
+      <Filter>BlackEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BlackEngine\Log.cpp">
+      <Filter>BlackEngine</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

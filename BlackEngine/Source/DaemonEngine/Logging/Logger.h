@@ -9,7 +9,7 @@
 
 
 
-namespace DaemonEngine::Logging {
+namespace BlackEngine::Logging {
 
 const int DAEMON_LOG_LEVEL_TRACE = 0;
 const int DAEMON_LOG_LEVEL_DEBUG = 1;

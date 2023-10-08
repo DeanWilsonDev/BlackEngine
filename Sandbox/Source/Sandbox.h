@@ -4,9 +4,9 @@
 
 #pragma once
 
-#include <DaemonEngine.h>
+#include <BlackEngine.h>
 
-class Sandbox: public DaemonEngine::Application {
+class Sandbox: public BlackEngine::Application {
 public:
   Sandbox();
 
@@ -14,6 +14,6 @@ public:
 };
 
 
-DaemonEngine::Application* DaemonEngine::CreateApplication(){
+BlackEngine::Application* BlackEngine::CreateApplication(){
   return new Sandbox();
 }

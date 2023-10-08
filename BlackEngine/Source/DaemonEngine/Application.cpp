@@ -4,7 +4,7 @@
 
 #include "Application.h"
 
-namespace DaemonEngine {
+namespace BlackEngine {
 
   Application::Application() {
 
@@ -19,4 +19,4 @@ namespace DaemonEngine {
   };
 
 
-} // DaemonEngine
+} // BlackEngine

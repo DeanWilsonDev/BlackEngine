@@ -4,11 +4,11 @@
 
 #pragma once
 
-// For use by Daemon Engine Games
+// For use by Black Engine Games
 
-#include "DaemonEngine/Application.h"
-#include "DaemonEngine/Log.h"
+#include "BlackEngine/Application.h"
+#include "BlackEngine/Log.h"
 
 // --------------Entry Point-------------------
-#include "DaemonEngine/EntryPoint.h"
+#include "BlackEngine/EntryPoint.h"
 // --------------------------------------------

@@ -13,10 +13,10 @@
 #elif DE_PLATFORM_MACOS
   #define DAEMON_ENGINE_API __attribute__((visibility("default")))
 #else
-  #error Daemon Engine only supports Windows and MacOS
+  #error Black Engine only supports Windows and MacOS
 #endif
 
-namespace DaemonEngine {
+namespace BlackEngine {
 
   class Core {
   public:

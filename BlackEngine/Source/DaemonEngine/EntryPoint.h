@@ -6,16 +6,16 @@
 
 #ifdef DE_PLATFORM_WINDOWS
 
-extern DaemonEngine::Application* DaemonEngine::CreateApplication();
+extern BlackEngine::Application* BlackEngine::CreateApplication();
 
 int main(int argc, char** argv) {
 
-  DaemonEngine::Log::Init();
+  BlackEngine::Log::Init();
   DE_CORE_WARN("Initialized Log");
   int a = 5;
   DE_INFO("Welcome to the Sandbox! Var={0}", a);
 
-  auto app = DaemonEngine::CreateApplication();
+  auto app = BlackEngine::CreateApplication();
   app->Run();
   delete app;
 }

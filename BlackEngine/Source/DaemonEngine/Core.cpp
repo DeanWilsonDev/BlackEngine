@@ -1,7 +1,7 @@
 
 
 #include "Core.h"
-namespace DaemonEngine {
+namespace BlackEngine {
 
   Core::Core() = default;
 
