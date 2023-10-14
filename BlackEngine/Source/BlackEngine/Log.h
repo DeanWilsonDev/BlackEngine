@@ -13,11 +13,11 @@ namespace BlackEngine {
   class Log {
   public:
     DAEMON_ENGINE_API static void Init();
-    DAEMON_ENGINE_API inline static std::shared_ptr<spdlog::logger>& GetCoreLogger();
-    DAEMON_ENGINE_API inline static std::shared_ptr<spdlog::logger>& GetClientLogger();
+    DAEMON_ENGINE_API inline static std::shared_ptr<Logger>& GetCoreLogger();
+    DAEMON_ENGINE_API inline static std::shared_ptr<Logger>& GetClientLogger();
   private:
-    static std::shared_ptr<spdlog::logger> s_CoreLogger;
-    static std::shared_ptr<spdlog::logger> s_ClientLogger;
+    static std::shared_ptr<Logger> CoreLogger;
+    static std::shared_ptr<Logger> ClientLogger;
   };
 }
 

@@ -45,9 +45,8 @@ const int DAEMON_LOG_LEVEL_OFF = 6;
       std::string sName;
       std::chrono::system_clock dtSystemClock;
       bool bDebugEnabled;
-
-    };
-
-
+      std::ofstream logfile;
+            
 }
+
 

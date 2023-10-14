@@ -7,27 +7,21 @@
 
 namespace BlackEngine {
 
-  std::shared_ptr<spdlog::logger> Log::s_CoreLogger;
-  std::shared_ptr<spdlog::logger> Log::s_ClientLogger;
+  BlackEngine::Logger Log::CoreLogger;
+  BlackEngine::Logger Log::ClientLogger;
 
   void Log::Init() {
 
-    spdlog::set_pattern("%^[%T] %n: %v%$");
-
-    s_CoreLogger = spdlog::stdout_color_mt("DAEMON_ENGINE");
-    s_CoreLogger->set_level(spdlog::level::trace);
-
-    s_ClientLogger = spdlog::stdout_color_mt("APP");
-    s_ClientLogger->set_level(spdlog::level::trace);
+    CoreLogger = BlackEngine::Logger("BlackEngine", true);
+    ClientLogger = BlackEngine::Logger("SandBox", false);
   }
 
-  std::shared_ptr<spdlog::logger> &Log::GetCoreLogger() {
-    return s_CoreLogger;
+  BlackEngine::Logger &Log::GetCoreLogger() {
+    return CoreLogger;
   }
 
-  std::shared_ptr<spdlog::logger> &Log::GetClientLogger() {
-    return s_ClientLogger;
+  BlackEngine::Logger &Log::GetClientLogger() {
+      return ClientLogger;
   }
-
 
 } // BlackEngine
