@@ -4,10 +4,9 @@
 
 #pragma once
 
-#include <string>
 #include <chrono>
-
-
+#include <fstream>
+#include <string>
 
 namespace BlackEngine::Logging {
 
@@ -19,34 +18,54 @@ const int DAEMON_LOG_LEVEL_ERROR = 4;
 const int DAEMON_LOG_LEVEL_FATAL = 5;
 const int DAEMON_LOG_LEVEL_OFF = 6;
 
-  enum LogLevel : int {
-    Trace = DAEMON_LOG_LEVEL_TRACE,
-    Debug = DAEMON_LOG_LEVEL_DEBUG,
-    Info = DAEMON_LOG_LEVEL_INFO,
-    Warn = DAEMON_LOG_LEVEL_WARN,
-    Error = DAEMON_LOG_LEVEL_ERROR,
-    Fatal = DAEMON_LOG_LEVEL_FATAL,
-    Off = DAEMON_LOG_LEVEL_OFF
+enum LogLevel : int {
+  Trace = DAEMON_LOG_LEVEL_TRACE,
+  Debug = DAEMON_LOG_LEVEL_DEBUG,
+  Info = DAEMON_LOG_LEVEL_INFO,
+  Warn = DAEMON_LOG_LEVEL_WARN,
+  Error = DAEMON_LOG_LEVEL_ERROR,
+  Fatal = DAEMON_LOG_LEVEL_FATAL,
+  Off = DAEMON_LOG_LEVEL_OFF
+};
+
+class Logger {
+public:
+  Logger(std::string name, bool debugEnabled = false);
+  Logger(std::string name, std::string fileName, bool debugEnabled = false);
+  ~Logger();
+
+  Logger &operator=(const Logger &other) {
+    if (this == &other) {
+      return *this;
+    }
+
+    if (logfile.is_open()) {
+      logfile.close();
+    }
+
+    std::string newFilename = other.logfile.rdbuf()->getloc().name();
+    logfile.open(newFilename, std::ios::out | std::ios::app);
+
+    return *this;
   };
 
+  void log(std::chrono::system_clock::time_point logTime, LogLevel level,
+           std::string_view message);
+  [[nodiscard]] bool shouldLogMessage(LogLevel level) const;
+  void logMessage(std::chrono::system_clock::time_point logTime,
+                  std::string name, LogLevel level, std::string_view message);
+  [[nodiscard]] bool getDebugEnabled() const;
+  bool enableDebugging();
+  bool disableDebugging();
 
-    class Logger {
+private:
+  std::string sName;
+  std::chrono::system_clock dtSystemClock;
+  bool bDebugEnabled;
+  std::ofstream logfile;
+  std::string filename;
 
-    public:
-      Logger(std::string name, bool debugEnabled);
-      ~Logger();
-      void Log(std::chrono::system_clock::time_point logTime, LogLevel level, std::string_view message);
-      [[nodiscard]] bool ShouldLogMessage(LogLevel level) const;
-      void LogMessage(std::chrono::system_clock::time_point  logTime, std::string name, LogLevel level, std::string_view message);
-      [[nodiscard]] bool GetDebugEnabled() const;
-      bool EnableDebugging();
-      bool DisableDebugging();
-    private:
-      std::string sName;
-      std::chrono::system_clock dtSystemClock;
-      bool bDebugEnabled;
-      std::ofstream logfile;
-            
-}
-
-
+  void setColor(LogLevel level);
+  void resetColor();
+};
+} // namespace BlackEngine::Logging

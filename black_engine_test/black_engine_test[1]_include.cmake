@@ -1,0 +1,5 @@
+if(EXISTS "/Users/deanwilson/development/cpp/BlackEngine/black_engine_test/black_engine_test[1]_tests.cmake")
+  include("/Users/deanwilson/development/cpp/BlackEngine/black_engine_test/black_engine_test[1]_tests.cmake")
+else()
+  add_test(black_engine_test_NOT_BUILT black_engine_test_NOT_BUILT)
+endif()

@@ -4,11 +4,11 @@
 
 #pragma once
 
-#ifdef DE_PLATFORM_WINDOWS
+#if DE_PLATFORM_WINDOWS || DE_PLATFORM_MACOS
 
-extern BlackEngine::Application* BlackEngine::CreateApplication();
+extern BlackEngine::Application *BlackEngine::CreateApplication();
 
-int main(int argc, char** argv) {
+int main(int argc, char **argv) {
 
   BlackEngine::Log::Init();
   DE_CORE_WARN("Initialized Log");

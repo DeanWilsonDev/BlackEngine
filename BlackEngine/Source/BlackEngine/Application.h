@@ -7,16 +7,16 @@
 
 namespace BlackEngine {
 
-  class DAEMON_ENGINE_API Application {
-  public:
-    Application();
+class BLACK_ENGINE_API Application {
+public:
+  Application();
 
-    virtual ~Application();
+  virtual ~Application();
 
-    void Run();
-  };
+  void Run();
+};
 
-  // To be defined in the Client
-  Application* CreateApplication();
+// To be defined in the Client
+Application *CreateApplication();
 
-} // BlackEngine
+} // namespace BlackEngine

@@ -3,15 +3,17 @@
 //
 
 #pragma once
+#define BLACK_ENGINE_PLATFORM_MACOS true
 
-#ifdef DE_PLATFORM_WINDOWS
-  #ifdef DE_BUILD_DLL
-    #define DAEMON_ENGINE_API __declspec(dllexport)
+
+#ifdef BLACK_ENGINE_PLATFORM_WINDOWS
+  #ifdef BLACK_ENGINE_BUILD_DLL
+    #define BLACK_ENGINE_API __declspec(dllexport)
   #else
-    #define DAEMON_ENGINE_API __declspec(dllimport)
+    #define BLACK_ENGINE_API __declspec(dllimport)
   #endif
-#elif DE_PLATFORM_MACOS
-  #define DAEMON_ENGINE_API __attribute__((visibility("default")))
+#elif BLACK_ENGINE_PLATFORM_MACOS
+  #define BLACK_ENGINE_API __attribute__((visibility("default")))
 #else
   #error Black Engine only supports Windows and MacOS
 #endif

@@ -1,0 +1,4 @@
+/Users/deanwilson/development/cpp/BlackEngine/Sandbox/CMakeFiles/Sandbox.dir
+/Users/deanwilson/development/cpp/BlackEngine/Sandbox/CMakeFiles/CopyDllToSandbox.dir
+/Users/deanwilson/development/cpp/BlackEngine/Sandbox/CMakeFiles/edit_cache.dir
+/Users/deanwilson/development/cpp/BlackEngine/Sandbox/CMakeFiles/rebuild_cache.dir
