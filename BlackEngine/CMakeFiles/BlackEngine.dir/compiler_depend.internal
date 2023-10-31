@@ -6,10 +6,6 @@ BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o
  /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/BlackEngine/Application.h
  /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/BlackEngine/Core.h
 
-BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.o
- /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/BlackEngine/Core.cpp
- /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/BlackEngine/Core.h
-
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o
  /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/BlackEngine/Logging/Log.cpp
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/Availability.h

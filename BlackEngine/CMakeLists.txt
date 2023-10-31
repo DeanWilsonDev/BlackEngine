@@ -15,7 +15,6 @@ add_library(
   BlackEngine SHARED
   src/BlackEngine.h
   src/BlackEngine/Core.h
-  src/BlackEngine/Core.cpp
   src/BlackEngine/Application.h
   src/BlackEngine/Application.cpp
   src/BlackEngine/EntryPoint.h
@@ -23,6 +22,9 @@ add_library(
   src/BlackEngine/Logging/Log.cpp
   src/BlackEngine/Logging/Logger.cpp
   src/BlackEngine/Logging/Logger.h
+  src/BlackEngine/Events/Event.h
+  src/BlackEngine/Events/MouseEvent.h
+  src/BlackEngine/Events/KeyEvent.h
   src/BlackEngine/Math/Vector3D.h
   src/BlackEngine/Mesh.h)
 

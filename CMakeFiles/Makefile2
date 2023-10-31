@@ -115,12 +115,12 @@ Sandbox/clean: Sandbox/CMakeFiles/CopyDllToSandbox.dir/clean
 BlackEngine/CMakeFiles/BlackEngine.dir/all:
 	$(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=1,2,3,4,5 "Built target BlackEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=1,2,3,4 "Built target BlackEngine"
 .PHONY : BlackEngine/CMakeFiles/BlackEngine.dir/all
 
 # Build rule for subdir invocation for target.
 BlackEngine/CMakeFiles/BlackEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlackEngine/CMakeFiles/BlackEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/CMakeFiles 0
 .PHONY : BlackEngine/CMakeFiles/BlackEngine.dir/rule
@@ -142,12 +142,12 @@ Sandbox/CMakeFiles/Sandbox.dir/all: BlackEngine/CMakeFiles/BlackEngine.dir/all
 Sandbox/CMakeFiles/Sandbox.dir/all: Sandbox/CMakeFiles/CopyDllToSandbox.dir/all
 	$(MAKE) $(MAKESILENT) -f Sandbox/CMakeFiles/Sandbox.dir/build.make Sandbox/CMakeFiles/Sandbox.dir/depend
 	$(MAKE) $(MAKESILENT) -f Sandbox/CMakeFiles/Sandbox.dir/build.make Sandbox/CMakeFiles/Sandbox.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=6,7 "Built target Sandbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=5,6 "Built target Sandbox"
 .PHONY : Sandbox/CMakeFiles/Sandbox.dir/all
 
 # Build rule for subdir invocation for target.
 Sandbox/CMakeFiles/Sandbox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Sandbox/CMakeFiles/Sandbox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/CMakeFiles 0
 .PHONY : Sandbox/CMakeFiles/Sandbox.dir/rule
@@ -173,7 +173,7 @@ Sandbox/CMakeFiles/CopyDllToSandbox.dir/all: BlackEngine/CMakeFiles/BlackEngine.
 
 # Build rule for subdir invocation for target.
 Sandbox/CMakeFiles/CopyDllToSandbox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Sandbox/CMakeFiles/CopyDllToSandbox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/CMakeFiles 0
 .PHONY : Sandbox/CMakeFiles/CopyDllToSandbox.dir/rule

@@ -154,30 +154,6 @@ src/BlackEngine/Application.cpp.s:
 	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.s
 .PHONY : src/BlackEngine/Application.cpp.s
 
-src/BlackEngine/Core.o: src/BlackEngine/Core.cpp.o
-.PHONY : src/BlackEngine/Core.o
-
-# target to build an object file
-src/BlackEngine/Core.cpp.o:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.o
-.PHONY : src/BlackEngine/Core.cpp.o
-
-src/BlackEngine/Core.i: src/BlackEngine/Core.cpp.i
-.PHONY : src/BlackEngine/Core.i
-
-# target to preprocess a source file
-src/BlackEngine/Core.cpp.i:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.i
-.PHONY : src/BlackEngine/Core.cpp.i
-
-src/BlackEngine/Core.s: src/BlackEngine/Core.cpp.s
-.PHONY : src/BlackEngine/Core.s
-
-# target to generate assembly for a file
-src/BlackEngine/Core.cpp.s:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.s
-.PHONY : src/BlackEngine/Core.cpp.s
-
 src/BlackEngine/Logging/Log.o: src/BlackEngine/Logging/Log.cpp.o
 .PHONY : src/BlackEngine/Logging/Log.o
 
@@ -238,9 +214,6 @@ help:
 	@echo "... src/BlackEngine/Application.o"
 	@echo "... src/BlackEngine/Application.i"
 	@echo "... src/BlackEngine/Application.s"
-	@echo "... src/BlackEngine/Core.o"
-	@echo "... src/BlackEngine/Core.i"
-	@echo "... src/BlackEngine/Core.s"
 	@echo "... src/BlackEngine/Logging/Log.o"
 	@echo "... src/BlackEngine/Logging/Log.i"
 	@echo "... src/BlackEngine/Logging/Log.s"

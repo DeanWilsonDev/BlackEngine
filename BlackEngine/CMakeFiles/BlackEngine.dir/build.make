@@ -69,24 +69,10 @@ include BlackEngine/CMakeFiles/BlackEngine.dir/progress.make
 # Include the compile flags for this target's objects.
 include BlackEngine/CMakeFiles/BlackEngine.dir/flags.make
 
-BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.o: BlackEngine/CMakeFiles/BlackEngine.dir/flags.make
-BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.o: BlackEngine/src/BlackEngine/Core.cpp
-BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.o: BlackEngine/CMakeFiles/BlackEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.o"
-	cd /Users/deanwilson/development/cpp/BlackEngine/BlackEngine && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.o -MF CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.o.d -o CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.o -c /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/BlackEngine/Core.cpp
-
-BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.i"
-	cd /Users/deanwilson/development/cpp/BlackEngine/BlackEngine && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/BlackEngine/Core.cpp > CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.i
-
-BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.s"
-	cd /Users/deanwilson/development/cpp/BlackEngine/BlackEngine && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/BlackEngine/Core.cpp -o CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.s
-
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o: BlackEngine/CMakeFiles/BlackEngine.dir/flags.make
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o: BlackEngine/src/BlackEngine/Application.cpp
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o: BlackEngine/CMakeFiles/BlackEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o"
 	cd /Users/deanwilson/development/cpp/BlackEngine/BlackEngine && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o -MF CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o.d -o CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o -c /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/BlackEngine/Application.cpp
 
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.i: cmake_force
@@ -100,7 +86,7 @@ BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.s: cmake_
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o: BlackEngine/CMakeFiles/BlackEngine.dir/flags.make
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o: BlackEngine/src/BlackEngine/Logging/Log.cpp
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o: BlackEngine/CMakeFiles/BlackEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o"
 	cd /Users/deanwilson/development/cpp/BlackEngine/BlackEngine && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o -MF CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o.d -o CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o -c /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/BlackEngine/Logging/Log.cpp
 
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.i: cmake_force
@@ -114,7 +100,7 @@ BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.s: cmake_
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o: BlackEngine/CMakeFiles/BlackEngine.dir/flags.make
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o: BlackEngine/src/BlackEngine/Logging/Logger.cpp
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o: BlackEngine/CMakeFiles/BlackEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o"
 	cd /Users/deanwilson/development/cpp/BlackEngine/BlackEngine && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o -MF CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o.d -o CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o -c /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/BlackEngine/Logging/Logger.cpp
 
 BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.i: cmake_force
@@ -127,7 +113,6 @@ BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.s: cma
 
 # Object files for target BlackEngine
 BlackEngine_OBJECTS = \
-"CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.o" \
 "CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o" \
 "CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o" \
 "CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o"
@@ -135,13 +120,12 @@ BlackEngine_OBJECTS = \
 # External object files for target BlackEngine
 BlackEngine_EXTERNAL_OBJECTS =
 
-bin/arm64/BlackEngine/libBlackEngine.dylib: BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Core.cpp.o
 bin/arm64/BlackEngine/libBlackEngine.dylib: BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o
 bin/arm64/BlackEngine/libBlackEngine.dylib: BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o
 bin/arm64/BlackEngine/libBlackEngine.dylib: BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o
 bin/arm64/BlackEngine/libBlackEngine.dylib: BlackEngine/CMakeFiles/BlackEngine.dir/build.make
 bin/arm64/BlackEngine/libBlackEngine.dylib: BlackEngine/CMakeFiles/BlackEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library ../bin/arm64/BlackEngine/libBlackEngine.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../bin/arm64/BlackEngine/libBlackEngine.dylib"
 	cd /Users/deanwilson/development/cpp/BlackEngine/BlackEngine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BlackEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

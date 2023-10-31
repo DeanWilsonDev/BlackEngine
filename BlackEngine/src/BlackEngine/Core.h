@@ -18,12 +18,4 @@
 #define BLACK_ENGINE_API __attribute__((visibility("default")))
 #endif
 
-namespace BlackEngine {
-
-class Core {
-public:
-  Core();
-
-  virtual ~Core();
-};
-} // namespace BlackEngine
+#define BIT(x) (1 << x)
