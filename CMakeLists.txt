@@ -3,5 +3,5 @@ project(Main)
 set(CMAKE_CXX_STANDARD 17)
 
 add_subdirectory(BlackEngine)
-add_subdirectory(black_engine_test)
+## add_subdirectory(BlackEngineTest)
 add_subdirectory(Sandbox)

@@ -14,8 +14,20 @@
 # EXTERNAL cache entries
 ########################
 
+//No help, variable specified on the command line.
+BLACK_ENGINE_PLATFORM_MACOS:UNINITIALIZED=1
+
 //Builds the googlemock subproject
 BUILD_GMOCK:BOOL=ON
+
+//Value Computed by CMake
+BlackEngineTest_BINARY_DIR:STATIC=/Users/deanwilson/development/cpp/BlackEngine/BlackEngineTest
+
+//Value Computed by CMake
+BlackEngineTest_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+BlackEngineTest_SOURCE_DIR:STATIC=/Users/deanwilson/development/cpp/BlackEngine/BlackEngineTest
 
 //Value Computed by CMake
 BlackEngine_BINARY_DIR:STATIC=/Users/deanwilson/development/cpp/BlackEngine/BlackEngine
@@ -531,7 +543,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

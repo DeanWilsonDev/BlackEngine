@@ -13,23 +13,27 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY
 # Generate .dll file
 add_library(
   BlackEngine SHARED
-  Source/BlackEngine.h
-  Source/BlackEngine/Core.h
-  Source/BlackEngine/Core.cpp
-  Source/BlackEngine/Application.h
-  Source/BlackEngine/Application.cpp
-  Source/BlackEngine/EntryPoint.h
-  Source/BlackEngine/Logging/Log.h
-  Source/BlackEngine/Logging/Log.cpp
-  Source/BlackEngine/Logging/Logger.cpp
-  Source/BlackEngine/Logging/Logger.h
-  Source/BlackEngine/Math/Vector3D.h
-  Source/BlackEngine/Mesh.h)
+  src/BlackEngine.h
+  src/BlackEngine/Core.h
+  src/BlackEngine/Core.cpp
+  src/BlackEngine/Application.h
+  src/BlackEngine/Application.cpp
+  src/BlackEngine/EntryPoint.h
+  src/BlackEngine/Logging/Log.h
+  src/BlackEngine/Logging/Log.cpp
+  src/BlackEngine/Logging/Logger.cpp
+  src/BlackEngine/Logging/Logger.h
+  src/BlackEngine/Math/Vector3D.h
+  src/BlackEngine/Mesh.h)
 
-add_definitions(# -DBLACK_ENGINE_PLATFORM_WINDOWS
-                -DBLACK_ENGINE_PLATFORM_MACOS -DBLACK_ENGINE_BUILD_DLL)
 
-target_include_directories(
-  BlackEngine PUBLIC "${CMAKE_SOURCE_DIR}/BlackEngine/Packages/spdlog/include")
+target_compile_definitions(BlackEngine PUBLIC BUILDING_BLACK_ENGINE)
 
-target_compile_definitions(BlackEngine PUBLIC BUILDING_DAEMON_ENGINE)
+if(BLACK_ENGINE_PLATFORM_MACOS)
+    target_compile_definitions(BlackEngine PUBLIC BLACK_ENGINE_PLATFORM_MACOS=1)
+endif()
+
+if(BLACK_ENGINE_PLATFORM_WINDOWS)
+    add_definitions(-DBLACK_ENGINE_BUILD_DLL)
+    target_compile_definitions(BlackEngine PUBLIC BLACK_ENGINE_PLATFORM_WINDOWS=1)
+endif()

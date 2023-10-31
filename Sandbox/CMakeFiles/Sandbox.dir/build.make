@@ -69,35 +69,35 @@ include Sandbox/CMakeFiles/Sandbox.dir/progress.make
 # Include the compile flags for this target's objects.
 include Sandbox/CMakeFiles/Sandbox.dir/flags.make
 
-Sandbox/CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.o: Sandbox/CMakeFiles/Sandbox.dir/flags.make
-Sandbox/CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.o: Sandbox/Source/Sandbox.cpp
-Sandbox/CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.o: Sandbox/CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Sandbox/CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.o"
-	cd /Users/deanwilson/development/cpp/BlackEngine/Sandbox && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Sandbox/CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.o -MF CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.o.d -o CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.o -c /Users/deanwilson/development/cpp/BlackEngine/Sandbox/Source/Sandbox.cpp
+Sandbox/CMakeFiles/Sandbox.dir/src/Sandbox.cpp.o: Sandbox/CMakeFiles/Sandbox.dir/flags.make
+Sandbox/CMakeFiles/Sandbox.dir/src/Sandbox.cpp.o: Sandbox/src/Sandbox.cpp
+Sandbox/CMakeFiles/Sandbox.dir/src/Sandbox.cpp.o: Sandbox/CMakeFiles/Sandbox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Sandbox/CMakeFiles/Sandbox.dir/src/Sandbox.cpp.o"
+	cd /Users/deanwilson/development/cpp/BlackEngine/Sandbox && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Sandbox/CMakeFiles/Sandbox.dir/src/Sandbox.cpp.o -MF CMakeFiles/Sandbox.dir/src/Sandbox.cpp.o.d -o CMakeFiles/Sandbox.dir/src/Sandbox.cpp.o -c /Users/deanwilson/development/cpp/BlackEngine/Sandbox/src/Sandbox.cpp
 
-Sandbox/CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.i"
-	cd /Users/deanwilson/development/cpp/BlackEngine/Sandbox && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/deanwilson/development/cpp/BlackEngine/Sandbox/Source/Sandbox.cpp > CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.i
+Sandbox/CMakeFiles/Sandbox.dir/src/Sandbox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Sandbox.dir/src/Sandbox.cpp.i"
+	cd /Users/deanwilson/development/cpp/BlackEngine/Sandbox && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/deanwilson/development/cpp/BlackEngine/Sandbox/src/Sandbox.cpp > CMakeFiles/Sandbox.dir/src/Sandbox.cpp.i
 
-Sandbox/CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.s"
-	cd /Users/deanwilson/development/cpp/BlackEngine/Sandbox && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/deanwilson/development/cpp/BlackEngine/Sandbox/Source/Sandbox.cpp -o CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.s
+Sandbox/CMakeFiles/Sandbox.dir/src/Sandbox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Sandbox.dir/src/Sandbox.cpp.s"
+	cd /Users/deanwilson/development/cpp/BlackEngine/Sandbox && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/deanwilson/development/cpp/BlackEngine/Sandbox/src/Sandbox.cpp -o CMakeFiles/Sandbox.dir/src/Sandbox.cpp.s
 
 # Object files for target Sandbox
 Sandbox_OBJECTS = \
-"CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.o"
+"CMakeFiles/Sandbox.dir/src/Sandbox.cpp.o"
 
 # External object files for target Sandbox
 Sandbox_EXTERNAL_OBJECTS =
 
-bin/arm64/Sandbox/Sandbox: Sandbox/CMakeFiles/Sandbox.dir/Source/Sandbox.cpp.o
+bin/arm64/Sandbox/Sandbox: Sandbox/CMakeFiles/Sandbox.dir/src/Sandbox.cpp.o
 bin/arm64/Sandbox/Sandbox: Sandbox/CMakeFiles/Sandbox.dir/build.make
 bin/arm64/Sandbox/Sandbox: bin/arm64/BlackEngine/libBlackEngine.dylib
 bin/arm64/Sandbox/Sandbox: Sandbox/CMakeFiles/Sandbox.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/arm64/Sandbox/Sandbox"
 	cd /Users/deanwilson/development/cpp/BlackEngine/Sandbox && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Sandbox.dir/link.txt --verbose=$(VERBOSE)
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying BlackEngine.dll to output directory"
-	cd /Users/deanwilson/development/cpp/BlackEngine/Sandbox && /opt/homebrew/Cellar/cmake/3.27.6/bin/cmake -E copy_if_different /Users/deanwilson/development/cpp/BlackEngine/bin/arm64/BlackEngine/Debug/BlackEngine.dll /Users/deanwilson/development/cpp/BlackEngine/bin/arm64/Sandbox
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying BlackEngine library to output directory"
+	cd /Users/deanwilson/development/cpp/BlackEngine/Sandbox && /opt/homebrew/Cellar/cmake/3.27.6/bin/cmake -E copy_if_different /Users/deanwilson/development/cpp/BlackEngine/bin/arm64/BlackEngine/libBlackEngine.dylib /Users/deanwilson/development/cpp/BlackEngine/Sandbox/bin/arm64/Sandbox
 
 # Rule to build all files generated by this target.
 Sandbox/CMakeFiles/Sandbox.dir/build: bin/arm64/Sandbox/Sandbox
