@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "BlackEngine/CMakeLists.txt"
+  "BlackEngine/src/blkpch.h"
   "CMakeFiles/3.27.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.6/CMakeSystem.cmake"
@@ -45,6 +46,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "BlackEngine/src/blkpch.h"
   "BlackEngine/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Sandbox/CMakeFiles/CMakeDirectoryInformation.cmake"
   )

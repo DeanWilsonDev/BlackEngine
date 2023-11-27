@@ -1,3 +1,0 @@
-/Users/deanwilson/development/cpp/BlackEngine/BlackEngine/CMakeFiles/BlackEngine.dir
-/Users/deanwilson/development/cpp/BlackEngine/BlackEngine/CMakeFiles/edit_cache.dir
-/Users/deanwilson/development/cpp/BlackEngine/BlackEngine/CMakeFiles/rebuild_cache.dir

@@ -18,7 +18,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 24,
+				"line" : 28,
 				"parent" : 0
 			}
 		]
@@ -65,7 +65,7 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "BlackEngine/blkpch.h.rule",
+			"path" : "BlackEngine/blkpch.h.gch.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

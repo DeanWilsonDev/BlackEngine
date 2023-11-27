@@ -66,14 +66,14 @@ include BlackEngine/CMakeFiles/blkpch.h.dir/compiler_depend.make
 # Include the progress variables for this target.
 include BlackEngine/CMakeFiles/blkpch.h.dir/progress.make
 
-BlackEngine/CMakeFiles/blkpch.h: BlackEngine/blkpch.h
+BlackEngine/CMakeFiles/blkpch.h: BlackEngine/blkpch.h.gch
 
-BlackEngine/blkpch.h: BlackEngine/src/blkpch.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating blkpch.h"
-	cd /Users/deanwilson/development/cpp/BlackEngine/BlackEngine && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -x c++-header /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/blkpch.h -o /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/blkpch.h
+BlackEngine/blkpch.h.gch: BlackEngine/src/blkpch.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/deanwilson/development/cpp/BlackEngine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating blkpch.h.gch"
+	cd /Users/deanwilson/development/cpp/BlackEngine/BlackEngine && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -x c++-header /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src/blkpch.h -o /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/blkpch.h.gch
 
 blkpch.h: BlackEngine/CMakeFiles/blkpch.h
-blkpch.h: BlackEngine/blkpch.h
+blkpch.h: BlackEngine/blkpch.h.gch
 blkpch.h: BlackEngine/CMakeFiles/blkpch.h.dir/build.make
 .PHONY : blkpch.h
 

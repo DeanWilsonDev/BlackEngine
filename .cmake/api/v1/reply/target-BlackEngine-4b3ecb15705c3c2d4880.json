@@ -30,31 +30,31 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 27,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 46,
+				"line" : 49,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 57,
+				"line" : 62,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 53,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 47,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
@@ -69,13 +69,13 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 51,
+				"line" : 55,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 48,
+				"line" : 52,
 				"parent" : 0
 			}
 		]
@@ -110,7 +110,7 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/Users/deanwilson/development/cpp/BlackEngine"
+					"path" : "/Users/deanwilson/development/cpp/BlackEngine/BlackEngine"
 				},
 				{
 					"backtrace" : 7,
@@ -130,7 +130,7 @@
 			[
 				{
 					"backtrace" : 8,
-					"header" : "/Users/deanwilson/development/cpp/BlackEngine/blkpch.h"
+					"header" : "/Users/deanwilson/development/cpp/BlackEngine/BlackEngine/blkpch.h.gch"
 				}
 			],
 			"sourceIndexes" : 
@@ -166,7 +166,7 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/Users/deanwilson/development/cpp/BlackEngine"
+					"path" : "/Users/deanwilson/development/cpp/BlackEngine/BlackEngine"
 				},
 				{
 					"backtrace" : 7,
@@ -186,7 +186,7 @@
 			[
 				{
 					"backtrace" : 8,
-					"header" : "/Users/deanwilson/development/cpp/BlackEngine/blkpch.h"
+					"header" : "/Users/deanwilson/development/cpp/BlackEngine/BlackEngine/blkpch.h.gch"
 				}
 			],
 			"sourceIndexes" : 
@@ -249,7 +249,13 @@
 				11,
 				12,
 				13,
-				14,
+				14
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
 				15
 			]
 		},
@@ -352,19 +358,19 @@
 		{
 			"backtrace" : 9,
 			"isGenerated" : true,
-			"path" : "BlackEngine/blkpch.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"path" : "BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx",
+			"path" : "BlackEngine/blkpch.h.gch",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "BlackEngine/blkpch.h.rule",
+			"path" : "BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx",
 			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "BlackEngine/blkpch.h.gch.rule",
+			"sourceGroupIndex" : 4
 		}
 	],
 	"type" : "SHARED_LIBRARY"

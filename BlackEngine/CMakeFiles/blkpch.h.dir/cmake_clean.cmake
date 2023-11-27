@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/blkpch.h"
-  "blkpch.h"
+  "blkpch.h.gch"
 )
 
 # Per-language clean rules from dependency scanning.

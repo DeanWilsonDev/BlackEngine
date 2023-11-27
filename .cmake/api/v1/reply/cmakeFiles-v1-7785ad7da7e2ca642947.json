@@ -147,6 +147,9 @@
 			"path" : "BlackEngine/CMakeLists.txt"
 		},
 		{
+			"path" : "BlackEngine/src/blkpch.h"
+		},
+		{
 			"path" : "Sandbox/CMakeLists.txt"
 		}
 	],
