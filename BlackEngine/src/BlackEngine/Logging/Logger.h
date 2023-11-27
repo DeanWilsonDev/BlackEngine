@@ -4,10 +4,6 @@
 
 #pragma once
 
-#include <chrono>
-#include <fstream>
-#include <string>
-
 namespace BlackEngine::Logging {
 
 const int BLACK_ENGINE_LOG_LEVEL_TRACE = 0;

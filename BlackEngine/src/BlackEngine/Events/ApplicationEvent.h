@@ -1,7 +1,6 @@
 #pragma once
 
 #include "./Event.h"
-#include <sstream>
 
 namespace BlackEngine {
 class WindowResizeEvent : public Event {
@@ -33,12 +32,50 @@ private:
 class WindowCloseEvent : public Event {
 
 public:
-    WindowCloseEvent() {}
-    
-    static EventType getStaticEvent() { return EventType::WindowClose; }
-    virtual EventType getEventType() const override { return getStaticEvent(); }
-    virtual int getCategoryFlags() const override { return EventCategory::EventCategoryApplication; } 
-    virtual const char *getName() const override { return "WindowClose"; }
+  WindowCloseEvent() {}
+
+  static EventType getStaticEvent() { return EventType::WindowClose; }
+  virtual EventType getEventType() const override { return getStaticEvent(); }
+  virtual int getCategoryFlags() const override {
+    return EventCategory::EventCategoryApplication;
+  }
+  virtual const char *getName() const override { return "WindowClose"; }
+};
+
+class AppTickEvent : public Event {
+public:
+  AppTickEvent() {}
+
+  static EventType getStaticEvent() { return EventType::AppTick; }
+  virtual EventType getEventType() const override { return getStaticEvent(); }
+  virtual int getCategoryFlags() const override {
+    return EventCategory::EventCategoryApplication;
+  }
+  virtual const char *getName() const override { return "AppTick"; }
+};
+
+class AppUpdateEvent : public Event {
+public:
+  AppUpdateEvent() {}
+
+  static EventType getStaticEvent() { return EventType::AppUpdate; }
+  virtual EventType getEventType() const override { return getStaticEvent(); }
+  virtual int getCategoryFlags() const override {
+    return EventCategory::EventCategoryApplication;
+  }
+  virtual const char *getName() const override { return "AppUpdate"; }
+};
+
+class AppRenderEvent : public Event {
+    public:
+        AppRenderEvent() {}
+
+        static EventType getStaticEvent() { return EventType::AppRender;}
+        virtual EventType getEventType() const override { return getStaticEvent(); }
+        virtual int getCategoryFlags() const override {
+            return EventCategory::EventCategoryApplication;
+        }
+        virtual const char *getName() const override { return "AppRender"; }
 };
 
 } // namespace BlackEngine

@@ -4,24 +4,23 @@
 
 #pragma once
 
-#include <vector>
-#include "Math.h"
+#include "Math/Vector3D.h"
+#include "blkpch.h"
 
 using namespace BlackEngine::Math;
-using namespace std;
 
 namespace BlackEngine::Mesh {
 
   struct Triangle {
-    Vector3D<float> vertices[3];
+    Vector3D vertices[3];
 
-    explicit Triangle(const Vector3D<float> _vertices[3]) {
+    explicit Triangle(const Vector3D _vertices[3]) {
       for(int i = 0; i < 3; i++){
         vertices[i] = _vertices[i];
       }
     };
 
-    Triangle(const Vector3D<float> v0, const Vector3D<float> v1, const Vector3D<float> v2){
+    Triangle(const Vector3D v0, const Vector3D v1, const Vector3D v2){
       vertices[0] = v0;
       vertices[1] = v1;
       vertices[2] = v2;

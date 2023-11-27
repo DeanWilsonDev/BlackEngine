@@ -117,6 +117,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+BlackEngine/CMakeFiles/blkpch.h.dir/rule:
+	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlackEngine/CMakeFiles/blkpch.h.dir/rule
+.PHONY : BlackEngine/CMakeFiles/blkpch.h.dir/rule
+
+# Convenience name for target.
+blkpch.h: BlackEngine/CMakeFiles/blkpch.h.dir/rule
+.PHONY : blkpch.h
+
+# fast build rule for target.
+blkpch.h/fast:
+	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/blkpch.h.dir/build.make BlackEngine/CMakeFiles/blkpch.h.dir/build
+.PHONY : blkpch.h/fast
+
+# Convenience name for target.
 BlackEngine/CMakeFiles/BlackEngine.dir/rule:
 	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlackEngine/CMakeFiles/BlackEngine.dir/rule
 .PHONY : BlackEngine/CMakeFiles/BlackEngine.dir/rule
@@ -129,6 +143,21 @@ BlackEngine: BlackEngine/CMakeFiles/BlackEngine.dir/rule
 BlackEngine/fast:
 	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/build
 .PHONY : BlackEngine/fast
+
+# target to build an object file
+cmake_pch_arm64.hxx.pch:
+	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx.pch
+.PHONY : cmake_pch_arm64.hxx.pch
+
+# target to preprocess a source file
+cmake_pch_arm64.hxx.i:
+	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx.i
+.PHONY : cmake_pch_arm64.hxx.i
+
+# target to generate assembly for a file
+cmake_pch_arm64.hxx.s:
+	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx.s
+.PHONY : cmake_pch_arm64.hxx.s
 
 src/BlackEngine/Application.o: src/BlackEngine/Application.cpp.o
 .PHONY : src/BlackEngine/Application.o
@@ -210,7 +239,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... blkpch.h"
 	@echo "... BlackEngine"
+	@echo "... cmake_pch_arm64.hxx.pch"
+	@echo "... cmake_pch_arm64.hxx.i"
+	@echo "... cmake_pch_arm64.hxx.s"
 	@echo "... src/BlackEngine/Application.o"
 	@echo "... src/BlackEngine/Application.i"
 	@echo "... src/BlackEngine/Application.s"

@@ -4,9 +4,17 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = -DBLACK_ENGINE_PLATFORM_MACOS=1 -DBUILDING_BLACK_ENGINE -DBlackEngine_EXPORTS
 
-CXX_INCLUDES = -I/Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src
+CXX_INCLUDES = -I/Users/deanwilson/development/cpp/BlackEngine -I/Users/deanwilson/development/cpp/BlackEngine/BlackEngine/src
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fPIC
 
 CXX_FLAGS = -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fPIC
+
+# PCH options: BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx.pch_OPTIONS = -Winvalid-pch;-Xclang;-emit-pch;-Xclang;-include;-Xclang;/Users/deanwilson/development/cpp/BlackEngine/BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx;-x;c++-header
+
+# PCH options: BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o_OPTIONS = -Winvalid-pch;;-Xarch_arm64;-include/Users/deanwilson/development/cpp/BlackEngine/BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx
+
+# PCH options: BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o_OPTIONS = -Winvalid-pch;;-Xarch_arm64;-include/Users/deanwilson/development/cpp/BlackEngine/BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx
+
+# PCH options: BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o_OPTIONS = -Winvalid-pch;;-Xarch_arm64;-include/Users/deanwilson/development/cpp/BlackEngine/BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx
 

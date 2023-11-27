@@ -3,9 +3,6 @@
 
 #include "../Core.h"
 
-#include <functional>
-#include <string>
-
 namespace BlackEngine {
 
 // NOTE: This Events system is currently blocking.

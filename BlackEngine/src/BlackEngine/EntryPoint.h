@@ -5,7 +5,7 @@
 #include "Application.h"
 #include "Core.h"
 #include "Logging/Log.h"
-#include <iostream>
+#include "blkpch.h"
 extern BlackEngine::Application *BlackEngine::CreateApplication();
 
 int main(int argc, char **argv) {

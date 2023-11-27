@@ -2,11 +2,6 @@
 // Created by Dean Wilson on 27/9/2023.
 //
 #include "Logger.h"
-#include <ctime>
-#include <fstream>
-#include <iostream>
-#include <string>
-#include <utility>
 
 namespace BlackEngine::Logging {
 

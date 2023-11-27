@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named blkpch.h
+
+# Build rule for target.
+blkpch.h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blkpch.h
+.PHONY : blkpch.h
+
+# fast build rule for target.
+blkpch.h/fast:
+	$(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/blkpch.h.dir/build.make BlackEngine/CMakeFiles/blkpch.h.dir/build
+.PHONY : blkpch.h/fast
+
+#=============================================================================
 # Target rules for targets named BlackEngine
 
 # Build rule for target.
@@ -164,6 +177,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CopyDllToSandbox"
+	@echo "... blkpch.h"
 	@echo "... BlackEngine"
 	@echo "... Sandbox"
 .PHONY : help

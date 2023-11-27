@@ -51,6 +51,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "BlackEngine/CMakeFiles/blkpch.h.dir/DependInfo.cmake"
   "BlackEngine/CMakeFiles/BlackEngine.dir/DependInfo.cmake"
   "Sandbox/CMakeFiles/Sandbox.dir/DependInfo.cmake"
   "Sandbox/CMakeFiles/CopyDllToSandbox.dir/DependInfo.cmake"
