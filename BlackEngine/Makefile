@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/deanwilson/development/cpp/BlackEngine
+CMAKE_SOURCE_DIR = /Users/deanwilson/development/cpp/BlackEngine/BlackEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/deanwilson/development/cpp/BlackEngine
+CMAKE_BINARY_DIR = /Users/deanwilson/development/cpp/BlackEngine/BlackEngine
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/CMakeFiles /Users/deanwilson/development/cpp/BlackEngine/BlackEngine//CMakeFiles/progress.marks
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlackEngine/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/CMakeFiles /Users/deanwilson/development/cpp/BlackEngine/BlackEngine//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deanwilson/development/cpp/BlackEngine/BlackEngine/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlackEngine/clean
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -103,60 +103,58 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlackEngine/preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlackEngine/preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-BlackEngine/CMakeFiles/blkpch.h.dir/rule:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlackEngine/CMakeFiles/blkpch.h.dir/rule
-.PHONY : BlackEngine/CMakeFiles/blkpch.h.dir/rule
+#=============================================================================
+# Target rules for targets named GeneratePrecompiledHeader
 
-# Convenience name for target.
-blkpch.h: BlackEngine/CMakeFiles/blkpch.h.dir/rule
-.PHONY : blkpch.h
+# Build rule for target.
+GeneratePrecompiledHeader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GeneratePrecompiledHeader
+.PHONY : GeneratePrecompiledHeader
 
 # fast build rule for target.
-blkpch.h/fast:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/blkpch.h.dir/build.make BlackEngine/CMakeFiles/blkpch.h.dir/build
-.PHONY : blkpch.h/fast
+GeneratePrecompiledHeader/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GeneratePrecompiledHeader.dir/build.make CMakeFiles/GeneratePrecompiledHeader.dir/build
+.PHONY : GeneratePrecompiledHeader/fast
 
-# Convenience name for target.
-BlackEngine/CMakeFiles/BlackEngine.dir/rule:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlackEngine/CMakeFiles/BlackEngine.dir/rule
-.PHONY : BlackEngine/CMakeFiles/BlackEngine.dir/rule
+#=============================================================================
+# Target rules for targets named BlackEngine
 
-# Convenience name for target.
-BlackEngine: BlackEngine/CMakeFiles/BlackEngine.dir/rule
+# Build rule for target.
+BlackEngine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlackEngine
 .PHONY : BlackEngine
 
 # fast build rule for target.
 BlackEngine/fast:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/build
 .PHONY : BlackEngine/fast
 
 # target to build an object file
 cmake_pch_arm64.hxx.pch:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx.pch
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx.pch
 .PHONY : cmake_pch_arm64.hxx.pch
 
 # target to preprocess a source file
 cmake_pch_arm64.hxx.i:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx.i
 .PHONY : cmake_pch_arm64.hxx.i
 
 # target to generate assembly for a file
 cmake_pch_arm64.hxx.s:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/cmake_pch_arm64.hxx.s
 .PHONY : cmake_pch_arm64.hxx.s
 
 src/BlackEngine/Application.o: src/BlackEngine/Application.cpp.o
@@ -164,7 +162,7 @@ src/BlackEngine/Application.o: src/BlackEngine/Application.cpp.o
 
 # target to build an object file
 src/BlackEngine/Application.cpp.o:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.o
 .PHONY : src/BlackEngine/Application.cpp.o
 
 src/BlackEngine/Application.i: src/BlackEngine/Application.cpp.i
@@ -172,7 +170,7 @@ src/BlackEngine/Application.i: src/BlackEngine/Application.cpp.i
 
 # target to preprocess a source file
 src/BlackEngine/Application.cpp.i:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.i
 .PHONY : src/BlackEngine/Application.cpp.i
 
 src/BlackEngine/Application.s: src/BlackEngine/Application.cpp.s
@@ -180,7 +178,7 @@ src/BlackEngine/Application.s: src/BlackEngine/Application.cpp.s
 
 # target to generate assembly for a file
 src/BlackEngine/Application.cpp.s:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/src/BlackEngine/Application.cpp.s
 .PHONY : src/BlackEngine/Application.cpp.s
 
 src/BlackEngine/Logging/Log.o: src/BlackEngine/Logging/Log.cpp.o
@@ -188,7 +186,7 @@ src/BlackEngine/Logging/Log.o: src/BlackEngine/Logging/Log.cpp.o
 
 # target to build an object file
 src/BlackEngine/Logging/Log.cpp.o:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.o
 .PHONY : src/BlackEngine/Logging/Log.cpp.o
 
 src/BlackEngine/Logging/Log.i: src/BlackEngine/Logging/Log.cpp.i
@@ -196,7 +194,7 @@ src/BlackEngine/Logging/Log.i: src/BlackEngine/Logging/Log.cpp.i
 
 # target to preprocess a source file
 src/BlackEngine/Logging/Log.cpp.i:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.i
 .PHONY : src/BlackEngine/Logging/Log.cpp.i
 
 src/BlackEngine/Logging/Log.s: src/BlackEngine/Logging/Log.cpp.s
@@ -204,7 +202,7 @@ src/BlackEngine/Logging/Log.s: src/BlackEngine/Logging/Log.cpp.s
 
 # target to generate assembly for a file
 src/BlackEngine/Logging/Log.cpp.s:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Log.cpp.s
 .PHONY : src/BlackEngine/Logging/Log.cpp.s
 
 src/BlackEngine/Logging/Logger.o: src/BlackEngine/Logging/Logger.cpp.o
@@ -212,7 +210,7 @@ src/BlackEngine/Logging/Logger.o: src/BlackEngine/Logging/Logger.cpp.o
 
 # target to build an object file
 src/BlackEngine/Logging/Logger.cpp.o:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.o
 .PHONY : src/BlackEngine/Logging/Logger.cpp.o
 
 src/BlackEngine/Logging/Logger.i: src/BlackEngine/Logging/Logger.cpp.i
@@ -220,7 +218,7 @@ src/BlackEngine/Logging/Logger.i: src/BlackEngine/Logging/Logger.cpp.i
 
 # target to preprocess a source file
 src/BlackEngine/Logging/Logger.cpp.i:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.i
 .PHONY : src/BlackEngine/Logging/Logger.cpp.i
 
 src/BlackEngine/Logging/Logger.s: src/BlackEngine/Logging/Logger.cpp.s
@@ -228,7 +226,7 @@ src/BlackEngine/Logging/Logger.s: src/BlackEngine/Logging/Logger.cpp.s
 
 # target to generate assembly for a file
 src/BlackEngine/Logging/Logger.cpp.s:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/BlackEngine.dir/build.make BlackEngine/CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackEngine.dir/build.make CMakeFiles/BlackEngine.dir/src/BlackEngine/Logging/Logger.cpp.s
 .PHONY : src/BlackEngine/Logging/Logger.cpp.s
 
 # Help Target
@@ -239,7 +237,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... blkpch.h"
+	@echo "... GeneratePrecompiledHeader"
 	@echo "... BlackEngine"
 	@echo "... cmake_pch_arm64.hxx.pch"
 	@echo "... cmake_pch_arm64.hxx.i"
@@ -264,6 +262,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/deanwilson/development/cpp/BlackEngine && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

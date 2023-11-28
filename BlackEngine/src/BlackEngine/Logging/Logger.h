@@ -1,8 +1,10 @@
 //
-// Created by Dean Wilson on 27/9/2023.
+// Created by Dean Wilson on 28/9/2023.
 //
 
 #pragma once
+
+#include "blkpch.h"
 
 namespace BlackEngine::Logging {
 

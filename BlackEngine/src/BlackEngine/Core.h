@@ -14,7 +14,7 @@
 #define BLACK_ENGINE_API __attribute__((visibility("default")))
 #else
 #pragma message("Platform unspecified. Defaulting to Mac build")
-#define BLACK_ENGINE_PLATFORM_MACOS = 1
+#define BLACK_ENGINE_PLATFORM_MACOS true
 #define BLACK_ENGINE_API __attribute__((visibility("default")))
 #endif
 

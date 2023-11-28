@@ -5,6 +5,7 @@
 
 
 #include "../Core.h"
+#include "blkpch.h"
 #include "Logger.h"
 
 namespace BlackEngine::Logging {
