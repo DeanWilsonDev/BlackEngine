@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named blkpch.h
+# Target rules for targets named GeneratePrecompiledHeader
 
 # Build rule for target.
-blkpch.h: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blkpch.h
-.PHONY : blkpch.h
+GeneratePrecompiledHeader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GeneratePrecompiledHeader
+.PHONY : GeneratePrecompiledHeader
 
 # fast build rule for target.
-blkpch.h/fast:
-	$(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/blkpch.h.dir/build.make BlackEngine/CMakeFiles/blkpch.h.dir/build
-.PHONY : blkpch.h/fast
+GeneratePrecompiledHeader/fast:
+	$(MAKE) $(MAKESILENT) -f BlackEngine/CMakeFiles/GeneratePrecompiledHeader.dir/build.make BlackEngine/CMakeFiles/GeneratePrecompiledHeader.dir/build
+.PHONY : GeneratePrecompiledHeader/fast
 
 #=============================================================================
 # Target rules for targets named BlackEngine
@@ -177,7 +177,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CopyDllToSandbox"
-	@echo "... blkpch.h"
+	@echo "... GeneratePrecompiledHeader"
 	@echo "... BlackEngine"
 	@echo "... Sandbox"
 .PHONY : help

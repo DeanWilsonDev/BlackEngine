@@ -1,4 +1,5 @@
 **/bin
+**/CMakeFiles
 **/cmake-build-debug
 **/.idea
 **/.vs
